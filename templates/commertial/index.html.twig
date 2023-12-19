@@ -1,0 +1,91 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello CommertialController!{% endblock %}
+
+{% block body %}
+ <section id="hero-comm" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="container text-center text-md-left" data-aos="fade-up">
+      <h1>Commertial</h1>
+      <div style="margin-top:100px">
+        <h2 style="text-transform: uppercase;">L’énergie solaire est une solution intelligente pour les différentes
+          entreprises (hôtels, de restaurants, de magasins de vente en détail...) </h2>
+
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-title" style="padding-top:50px">
+        <h2>Commertial</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 hide-on-mobile">
+          <img src="{{asset('img/commertial.jpg')}}" class="img-fluid" alt="" style="width:80%;">
+
+        </div>
+        <div class="col-lg-6 pt-4 pt-lg-0" style="margin-top: 70px;">
+          <p>
+            <span style="font-weight: bold;">Avantage :</span>
+          <ul>
+            <li>• La technologie photovoltaïque a fait ses preuves depuis plusieurs années.</li>
+            <li>• Les modules photovoltaïques sont durables et ont une garantie de performance de 25 ans. </li>
+            <li>• Le coût de l’électricité photovoltaïque est compétitif.</li>
+          </ul>
+          <div class="col-lg-6 show-on-mobile">
+            <img src="{{asset('img/commertial.jpg')}}" class="img-fluid" alt="" style="width:80%;">
+  
+          </div>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </section><!-- End About Section -->
+
+
+  <!-- Start Contact Section -->
+  <section id="contact" class="contact section-bg">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Contact</h2>
+      </div>
+
+      <div class="row mt-5 justify-content-center">
+
+        <div class="col-lg-10">
+
+          <div class="info-wrap">
+            <div class="row">
+              <div class="col-lg-4 info">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Localisation:</h4>
+                <p>Bouargoub<br>Nabeul</p>
+              </div>
+
+              <div class="col-lg-4 info mt-4 mt-lg-0">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>ma.energie.renouvelable@gmail.com</p>
+              </div>
+
+              <div class="col-lg-4 info mt-4 mt-lg-0">
+                <i class="bi bi-phone"></i>
+                <h4>Téléphone:</h4>
+                <p>Bureau: (+216) 72205255 <br>Mobile: (+216) 50705941</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    </div>
+  </section><!-- End Contact Section -->
+
+{% endblock %}

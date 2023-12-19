@@ -1,0 +1,41 @@
+ /*--------------------------------------------------------------
+  # Hero Section hero-devi
+  --------------------------------------------------------------*/
+  #hero-devi {
+    width: 100%;
+    height: 100vh;
+    background: url("../img/devi-bg.jpg") center center;
+    background-size: cover;
+    position: relative;
+    margin-top: 70px;
+    padding: 0;
+  }
+  
+  #hero-devi:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  #hero-devi .container {
+    z-index: 2;
+  }
+  
+  #hero-devi h1 {
+    font-weight: 700;
+    line-height: 56px;
+    font-size:150px;
+    color: #cfcece;
+  }
+  
+  
+  #hero-devi h2 {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 30px;
+    font-size: 24px;
+  }
+  

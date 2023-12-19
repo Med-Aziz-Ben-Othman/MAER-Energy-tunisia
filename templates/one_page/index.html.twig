@@ -1,0 +1,226 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello OnePageController!{% endblock %}
+
+{% block body %}
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="container text-center text-md-left" data-aos="fade-up">
+      <h1>M.A.E.R</h1>
+      <div style="margin-top:40px">
+      <h2>Pour les énergies renouvlables</h2>
+      <a href="#about" class="btn-get-started scrollto">Get Started</a>
+
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <!-- Main section -->
+  <main id="main">
+
+
+     <!-- ======= About Section ======= -->
+     <section id="about" class="about">
+      <div class="container">
+        <div class="section-title" style="padding-top:50px">
+          <h2>Présentation</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 hide-on-mobile">
+            <img src="{{asset('img/About-us.jpg')}}" class="img-fluid" alt="" style="width:80%; margin-top: 50px;">
+            <img src="{{asset('img/About-us2.jpg')}}" class="img-fluid" alt="" style="width:80%; margin-top: 100px;">
+
+          </div>
+          
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <p>
+              <span style="font-weight: bold;"> M.A.E.R</span> (M.A pour les énergies renouvelables) est une entreprise 100% tunisienne spécialisée dans le secteur des énergies renouvelables
+              (Photovoltaïque), nous sommes là pour vous aider à tout moment et nous serons heureux de
+              répondre à vos questions.
+            </p>
+            <p>
+              Nous mettons à votre disposition notre expertise spécialisée dans le secteur photovoltaïque couvrant
+              l&#39;ensemble du territoire de la Tunisie afin de répondre à tous vos besoins.
+            </p>
+            <ul>
+              <li><i class="bx bx-check-double"></i> Les installations photovoltaïques s&#39;articulent autour de deux lignes principales :</li>
+            </ul>
+            <div class="col-lg-6 show-on-mobile">
+              <img src="{{asset('img/About-us.jpg" class="img-fluid" alt="" style="width:80%; margin-top: 50px;')}}">
+  
+            </div>
+            
+            <div class="row icon-boxes">
+              <div class="col-md-6">
+                <i class="bx bx-receipt"></i>
+                <h4>Les sites raccordés au réseau :</h4>
+                <p>Un système photovoltaïque raccordé au réseau est un système de production d&#39;énergie électrique
+                  interconnecté à un réseau public de distribution d&#39;électricité (en Tunisie STEG).</p>
+
+                <p>Les principaux éléments d’une installation photovoltaïque sont les modules (générateur du courant
+                  continue) et l’onduleur (convertisseur du courant DCAC)</p>
+              </div>
+              <div class="col-md-6 mt-4 mt-md-0">
+                <i class="bx bx-cube-alt"></i>
+                <h4>Site isolé :</h4>
+                <p>
+                  Un système photovoltaïque pour site isolé est un générateur électrique autonome. Les sites isolés
+                  sont des habitations ou des applications non reliées au réseau électrique, le générateur
+                  photovoltaïque apporte l`énergie nécessaire à l`alimentation des besoins électriques. Dans ce cas les
+                  batteries sont nécessaire.
+                </p>
+           
+                
+              </div>
+            </div>
+            <div class="col-lg-6 show-on-mobile">
+              <img src="{{asset('img/About-us2.jpg" class="img-fluid" alt="" style="width:80%; margin-top: 50px;')}}">
+  
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+
+
+    <!-- ======= Nos Service Section ======= -->
+    <section id="testimonials" class="testimonials section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Nos Services</h2>
+          <p>Nous vous offrons, en fonction de votre intérêt, l&#39;un des trois types d&#39;installations photovoltaïques :</p>
+        </div>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+             <a href="{{ path('app_res') }}"   style="color:#444">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Les rayons solaires gratuits sont convertis à l’aide d&#39;une installation photovoltaïque en
+                  courant électrique pour satisfaire vos besoins et compenser votre consommation.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="{{asset('img/testimonials/testimonials-1.jpg')}}" class="testimonial-img" alt="">
+                <h3>Résidentiel</h3>
+              </div>
+             </a>
+             
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <a href="{{ path('app_agricole') }}"  style="color:#444">
+                <div class="testimonial-item">
+                  <p style="text-transform: lowercase;">
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    BÉNÉFICIEZ D’UNE SOLUTION AUTONOME POUR VOUS FOURNIR DE L’EAU SANS ou avec RACCORDEMENT
+                    STEG ET À MOINDRE COÛT.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                  <img src="{{asset('img/testimonials/testimonials-2.jpg')}}" class="testimonial-img" alt="">
+                  <h3>Agricole</h3>
+                </div>
+              </a>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <a href="{{ path('app_commertial') }}" style="color:#444">
+                <div class="testimonial-item">
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    L’énergie solaire est une solution intelligente pour les différentes entreprises (hôtels, de restaurants,
+                    de magasins de vente en détail...) 
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                  <img src="{{asset('img/testimonials/testimonials-3.jpg')}}" class="testimonial-img" alt="">
+                  <h3>Commertial</h3>
+                </div>
+              </a>
+              
+            </div><!-- End testimonial item -->
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Nos Service Section -->
+
+<!-- Strat No Partenaires Section -->
+    <section id="team" class="team">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Nos Partenaires</h2>
+        </div>
+
+        <div class="row" style="justify-content: center;">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <a href="https://www.steg.com.tn/fr/index.html"> <img src="{{asset('img/team/team-1.jpg')}}" alt=""></a> 
+              <h4>Societé Tunisienne d'Electricité et du Gaz</h4>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+             <a href="https://www.anme.tn/"> <img src="{{asset('img/team/team-2.jpg')}}" alt="" style="margin-bottom:39px;margin-top:31px; "></a>
+              <h4>Agence Nationale pour la Maîtrise de l'Energie</h4>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+<!-- end No Partenaires Section -->
+
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+        </div>
+
+        <div class="row mt-5 justify-content-center">
+
+          <div class="col-lg-10">
+
+            <div class="info-wrap">
+              <div class="row">
+                <div class="col-lg-4 info">
+                  <i class="bi bi-geo-alt"></i>
+                  <h4>Localisation:</h4>
+                  <p>Bouargoub<br>Nabeul</p>
+                </div>
+
+                <div class="col-lg-4 info mt-4 mt-lg-0">
+                  <i class="bi bi-envelope"></i>
+                  <h4>Email:</h4>
+                  <p>ma.energie.renouvelable@gmail.com</p>
+                </div>
+
+                <div class="col-lg-4 info mt-4 mt-lg-0">
+                  <i class="bi bi-phone"></i>
+                  <h4>Téléphone:</h4>
+                  <p>Bureau: (+216) 72205255 <br>Mobile: (+216) 50705941</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+{% endblock %}

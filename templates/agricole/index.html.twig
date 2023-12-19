@@ -1,0 +1,133 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello AgricoleController!{% endblock %}
+
+{% block body %}
+
+  <section id="hero-agricole" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="container text-center text-md-left" data-aos="fade-up">
+      <h1>Agricole</h1>
+      <div style="margin-top:100px">
+        <h2>BÉNÉFICIEZ D’UNE SOLUTION AUTONOME POUR VOUS FOURNIR DE L’EAU SANS OU AVEC RACCORDEMENT STEG ET À MOINDRE
+          COÛT.</h2>
+
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-title" style="padding-top:50px">
+        <h2>POMPAGE</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 hide-on-mobile">
+          <img src="{{asset('img/pompage3.jpg')}}" class="img-fluid" alt="" style="width:80%; margin-top: 50px;">
+          <img src="{{asset('img/pompage2.jpg')}}" class="img-fluid" alt="" style="width:80%; margin-top: 50px;">
+
+        </div>
+        <div class="col-lg-6 pt-4 pt-lg-0">
+          <p>
+            <span style="font-weight: bold;"> Le POMPAGE</span> d’eau est l’une des utilisations les plus simples et les
+            plus appropriées au photovoltaïque. De l’irrigation jusqu’à
+            la réserve d’eau à usage domestique, le système de pompage photovoltaïque
+            peut satisfaire vos besoins en eau. La plupart de ces systèmes ont l’avantage
+            de stocker l’eau pour l’utiliser lors du coucher du soleil, éliminant le besoin des batteries et
+            réduisant le coût global du système.
+          </p>
+
+          <div class="row icon-boxes">
+            <div class="col-md-6" style="width: 100%;">
+              <i class="bx bx-receipt"></i>
+              <p>
+
+                <span style="font-weight: bold; color: black;"> Pourquoi devriez-vous envisager une installation à
+                  l’énergie solaire
+                  pour l’irrigation de votre ferme?
+                </span>
+              </p>
+              <ul>
+                <li>• La distance de lignes électriques à haute tension et le coût d’une extension de ligne.</li>
+                <li>• L’exploitation et la maintenance d’un système solaire par rapport aux autres solutions, comme un
+                  générateur fonctionnant au diesel, propane ou essence.</li>
+                <li>• L’incertitude des prix futurs de l’électricité.</li>
+                <li>• Les coûts croissants de propane, d’essence et de carburant.</li>
+              </ul>
+              <div class="col-lg-6 show-on-mobile">
+                <img src="{{asset('img/pompage2.jpg')}}" class="img-fluid" alt="" style="width:80%; margin-top: 50px;">
+      
+              </div>
+            </div>
+          </div>
+          <div class="row icon-boxes">
+            <div class="col-md-6" style="width: 100%;">
+              <i class="bx bx-receipt"></i>
+              <p>
+
+                <span style="font-weight: bold; color: black;">SUBVENTION D'APIA
+                </span>
+              </p>
+              <ul>
+                <li>Fonds Tunisien de l’Investissement (APIA):</li>
+                <li>• 60% du cout pour les sociétés mutuelles de services agricoles et les groupements de développement dans le secteur de l’agriculture et de la pêche.</li>
+                <li>• 55% pour les investissements dont le coût ≤ 200 000 DT.</li>
+                <li>• 50% pour les autres projets.</li>
+                <li>Plafond : 500 000 TND</li>
+                <li>La prime est payée par l’APIA/CRDA à l’agriculteur</li>
+              </ul>
+              <div class="col-lg-6 show-on-mobile">
+                <img src="{{asset('img/pompage3.jpg')}}" class="img-fluid" alt="" style="width:80%; margin-top: 50px;">
+      
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+  </section><!-- End About Section -->
+
+
+  <!-- Start Contact Section -->
+  <section id="contact" class="contact section-bg">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Contact</h2>
+      </div>
+
+      <div class="row mt-5 justify-content-center">
+
+        <div class="col-lg-10">
+
+          <div class="info-wrap">
+            <div class="row">
+              <div class="col-lg-4 info">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Localisation:</h4>
+                <p>Bouargoub<br>Nabeul</p>
+              </div>
+
+              <div class="col-lg-4 info mt-4 mt-lg-0">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>ma.energie.renouvelable@gmail.com</p>
+              </div>
+
+              <div class="col-lg-4 info mt-4 mt-lg-0">
+                <i class="bi bi-phone"></i>
+                <h4>Téléphone:</h4>
+                <p>Bureau: (+216) 72205255 <br>Mobile: (+216) 50705941</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    </div>
+  </section><!-- End Contact Section -->
+
+{% endblock %}
