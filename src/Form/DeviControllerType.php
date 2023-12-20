@@ -8,6 +8,8 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Validator\Constraints\Regex; 
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use App\Entity\User;
+use Symfony\Component\Validator\Constraints\Email;
+use Symfony\Component\Form\Extension\Core\Type\EmailType;
 use Symfony\Component\Form\Extension\Core\Type\CheckboxType;
 use Symfony\Component\Form\Extension\Core\Type\PasswordType;
 use Symfony\Component\Validator\Constraints\IsTrue;
@@ -42,22 +44,36 @@ class DeviControllerType extends AbstractType
                     'message' => 'champs vide',
                 ]),
                 new Regex([
-                    'pattern' => '/^\d{10}$/',
-                    'message' => 'Le numéro de téléphone doit contenir 10 chiffres.',
+                    'pattern' => '/^\d{8}$/',
+                    'message' => 'Le numéro de téléphone doit contenir 8 chiffres.',
                 ]),
                 
             ],
         ])
-        ->add('Mail')
-        ->add('RefernceSTEG')
-        ->add('Remarque' ,TextareaType::class, [
+        ->add('Email', EmailType::class, [
             'constraints' => [
                 new NotBlank([
                     'message' => 'champs vide',
                 ]),
+                new Email([
+                    'message' => 'L\'adresse email "{{ value }}" n\'est pas valide.',
+                ]),
+            ],
+        ])
+        ->add('RefernceSTEG',TextType::class, [
+            'constraints' => [
+                new NotBlank([
+                    'message' => 'champs vide',
+                ]),
+                new Regex([
+                    'pattern' => '/^\d{9}$/',
+                    'message' => 'La Réference doit contenir 9 chiffre',
+                ]),
                 
             ],
-        ])         
+        ])
+        ->add('Remarque' ,TextareaType::class
+        )         
         ;
     }
 

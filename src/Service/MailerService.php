@@ -15,13 +15,13 @@ class MailerService
        
      }
     
-    public function sendEmail($to = 'azizben962@gmail.com' , $content = 'See Twig integration for better HTML integration!' ): void
+    public function sendEmail( $content = 'See Twig integration for better HTML integration!',string $sender ): void
     {
         
         $email = (new Email())
-            ->from('azizben962@gmail.com')
-            ->to($to)
-            ->subject('bonjour')
+            ->from($sender)
+            ->to('mohamedaziz.benothman@esprit.tn')
+            ->subject('Devi Gratuit')
             ->html($content);
             
              
